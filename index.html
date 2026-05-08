@@ -4,47 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar With Dark Mode</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Dark / Light Mode Toggle</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+    <!-- HEADER -->
+   <header>
 
-            <h1 class="logo">&lt;/GM&gt;</h1>
+    <div class="container">
 
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
+        <!-- LOGO -->
+        <h1 class="logo">&lt;/GM&gt;</h1>
 
-                    <li>
-                        <div class="toggle-btn">
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
 
-                            <input type="checkbox" id="checkbox">
+            <!-- HAMBURGER MENU -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
 
-                            <label for="checkbox" class="toggle-label">
-                                <span class="toggle-ball"></span>
-                            </label>
-
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+          
 
         </div>
-    </header>
 
-    <!-- <hr> -->
+        <!-- NAVBAR -->
+        <nav>
 
+            <ul id="nav-links">
+
+                <li>Home</li>
+                <li>Service</li>
+                <li>About</li>
+                <li>Contact</li>
+
+            </ul>
+
+        </nav>
+  <!-- DARK MODE TOGGLE -->
+            <div class="toggle-btn">
+
+                <input type="checkbox" id="checkbox">
+
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+
+            </div>
+    </div>
+
+</header>
+
+    <!-- MAIN SECTION -->
     <main>
 
         <div class="main">
 
+            <!-- TEXT -->
             <div class="text">
 
                 <h1 class="heading-h1">
@@ -61,13 +80,15 @@
 
             </div>
 
+            <!-- IMAGE -->
             <img src="https://img.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg?semt=ais_hybrid&w=740&q=80"
-                alt="Web Development" class="img">
+                alt="Web Development Image" class="img">
 
         </div>
 
     </main>
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>

@@ -242,3 +242,66 @@ li:hover {
         height: auto;
     }
 }
+
+
+/* HAMBURGER MENU */
+
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SHOW HAMBURGER */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* NAVBAR */
+    #nav-links {
+
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+        text-align: center;
+
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    /* ACTIVE CLASS */
+    #nav-links.active {
+        display: flex;
+    }
+
+    li {
+        font-size: 2rem;
+    }
+
+    /* MAIN SECTION */
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading-h1 {
+        font-size: 4rem;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
