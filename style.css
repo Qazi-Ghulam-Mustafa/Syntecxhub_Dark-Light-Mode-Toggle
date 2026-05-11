@@ -296,8 +296,13 @@ li:hover {
         text-align: center;
     }
 
+    .h2 {
+        padding-top:5px ;
+        font-size: 16px;
+    }
+
     .heading-h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
     }
 
     .img {
